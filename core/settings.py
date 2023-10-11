@@ -158,6 +158,7 @@ CORS_ALLOWED_ORIGINS = (
     'http://localhost:3000',
     'http://localhost:8000',
     'https://mfmadmin-izldar4i.b4a.run',
+    'https://camfront.vercel.app',
 )
 
 CORS_ALLOW_METHODS = (
