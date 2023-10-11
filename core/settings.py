@@ -140,9 +140,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-SECURE_SSL_REDIRECT = True
-# Configure the SECURE_HSTS_INCLUDE_SUBDOMAINS setting if needed.
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# SECURE_SSL_REDIRECT = True
+# # Configure the SECURE_HSTS_INCLUDE_SUBDOMAINS setting if needed.
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 # # Include the SECURE_HSTS_PRELOAD setting if you want to submit your site to the HSTS preload list.
 # SECURE_HSTS_PRELOAD = True
