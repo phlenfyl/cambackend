@@ -20,6 +20,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the server port
+EXPOSE 8000
 ENTRYPOINT [ "python3" ]
 
 # Command to start the server
