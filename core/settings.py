@@ -58,6 +58,7 @@ INSTALLED_APPS = [
 # django-taggit django-ckeditor-5 django-ckeditor django-embed-video djangorestframework cloudinary django-cors-headers djangoql django-import-export
 
 MIDDLEWARE = [
+    'core.middleware.AdminCORSMiddleware'
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
