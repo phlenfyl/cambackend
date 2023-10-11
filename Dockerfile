@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to start the server
-CMD [ "gunicorn", "--bind", "0.0.0.0:8000", "mfmcam.wsgi"]
+CMD [ "manage.py", "runserver", "0.0.0.0:8080"]
