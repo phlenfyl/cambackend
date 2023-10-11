@@ -28,6 +28,11 @@ SECRET_KEY = 'django-insecure-$ok6*buoc-06t2^p&3aff(ki84i-9(gji!73pwsf7!%44sjrfs
 DEBUG = True
 
 ALLOWED_HOSTS = ['mfmadmin-izldar4i.b4a.run', '*', '.mfmadmin-izldar4i.b4a.run']
+
+# Setup support for proxy headers
+USE_X_FORWARDED_HOST = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
 # CSRF_COOKIE_DOMAIN = '.mfmadmin-izldar4i.b4a.run'
 
