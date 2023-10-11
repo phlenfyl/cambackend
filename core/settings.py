@@ -144,8 +144,8 @@ SECURE_SSL_REDIRECT = True
 # Configure the SECURE_HSTS_INCLUDE_SUBDOMAINS setting if needed.
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
-# Include the SECURE_HSTS_PRELOAD setting if you want to submit your site to the HSTS preload list.
-SECURE_HSTS_PRELOAD = True
+# # Include the SECURE_HSTS_PRELOAD setting if you want to submit your site to the HSTS preload list.
+# SECURE_HSTS_PRELOAD = True
 
 
 STATIC_URL = 'static/'
