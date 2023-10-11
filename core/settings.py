@@ -27,9 +27,9 @@ SECRET_KEY = 'django-insecure-$ok6*buoc-06t2^p&3aff(ki84i-9(gji!73pwsf7!%44sjrfs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mfmadmin-izldar4i.b4a.run', '*']
-CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
-CSRF_COOKIE_DOMAIN = '.mfmadmin-izldar4i.b4a.run'
+ALLOWED_HOSTS = ['mfmadmin-izldar4i.b4a.run', '*', '.mfmadmin-izldar4i.b4a.run']
+# CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
+# CSRF_COOKIE_DOMAIN = '.mfmadmin-izldar4i.b4a.run'
 
 
 # Application definition
