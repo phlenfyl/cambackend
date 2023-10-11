@@ -49,12 +49,13 @@ INSTALLED_APPS = [
     'program',
     'sermon',
     'rest_framework',
-    'djoser',
     'cloudinary',
     'corsheaders',
     'djangoql',
     'import_export'
 ]
+# pip install -U django-jazzmin drf-yasg
+# django-taggit django-ckeditor-5 django-ckeditor django-embed-video djangorestframework cloudinary django-cors-headers djangoql django-import-export
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
