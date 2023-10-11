@@ -33,8 +33,8 @@ ALLOWED_HOSTS = ['mfmadmin-izldar4i.b4a.run', '*', '.mfmadmin-izldar4i.b4a.run']
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
-# CSRF_COOKIE_DOMAIN = '.mfmadmin-izldar4i.b4a.run'
+CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
+CSRF_COOKIE_DOMAIN = '.mfmadmin-izldar4i.b4a.run'
 
 
 # Application definition
