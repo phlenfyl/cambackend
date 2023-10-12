@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['mfmadmin-izldar4i.b4a.run', '*', '.mfmadmin-izldar4i.b4a.run']
 # Setup support for proxy headers
 USE_X_FORWARDED_HOST = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+FORCE_SCRIPT_NAME = '/'
 # SECURE_SSL_REDIRECT = True
 
 CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
