@@ -3,8 +3,11 @@ FROM python:3-slim
 
 
 # working directory
-RUN adduser -D myuser
+RUN adduser -m myuser
+
+# switch to the non root user
 USER myuser
+
 WORKDIR /home/myuser
 
 # set environment variables  
