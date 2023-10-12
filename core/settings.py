@@ -35,8 +35,8 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 FORCE_SCRIPT_NAME = '/'
 # SECURE_SSL_REDIRECT = True
 
-# CSRF_TRUSTED_ORIGINS = ['https://mfmadmin-izldar4i.b4a.run',]
-# CSRF_COOKIE_DOMAIN = 'mfmadmin-izldar4i.b4a.run'
+CSRF_TRUSTED_ORIGINS = ['https://backendcam-64bo4zjn.b4a.run',]
+CSRF_COOKIE_DOMAIN = 'https://backendcam-64bo4zjn.b4a.run'
 
 
 # Application definition
