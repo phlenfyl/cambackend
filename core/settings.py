@@ -67,10 +67,10 @@ INSTALLED_APPS = [
 # django-taggit django-ckeditor-5 django-ckeditor django-embed-video djangorestframework cloudinary django-cors-headers djangoql django-import-export
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
-    'core.middleware.AdminCORSMiddleware',
+    # 'core.middleware.AdminCORSMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -172,12 +172,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_uploads')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOWED_ORIGINS = (
-    'https://camfront.vercel.app',
-    'https://mfmadmin-izldar4i.b4a.run',
-    'http://localhost:3000',
-    'http://localhost:8000',
-)
+# CORS_ALLOWED_ORIGINS = (
+#     'https://camfront.vercel.app',
+#     'https://mfmadmin-izldar4i.b4a.run',
+#     'http://localhost:3000',
+#     'http://localhost:8000',
+# )
 
 CORS_ALLOW_METHODS = (
     "GET",
@@ -185,6 +185,7 @@ CORS_ALLOW_METHODS = (
     "PATCH",
     "POST",
     "PUT",
+    "DELETE",
 )
 
 CORS_ALLOW_ALL_ORIGINS = True
