@@ -2,13 +2,7 @@
 FROM python:3-slim
 
 
-# working directory
-RUN adduser -m myuser
-
-# switch to the non root user
-USER myuser
-
-WORKDIR /home/myuser
+WORKDIR /app
 
 # set environment variables  
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -17,15 +11,16 @@ ENV PYTHONUNBUFFERED 1
 # upgrading pip
 RUN pip install --upgrade pip 
 
-# copy requirements file and install dependencies
-COPY --chown=myuser:myuser requirements.txt requirements.txt
-RUN pip install --no-cache-dir --user -r requirements.txt
+RUN python -m venv /venv
+ENV PATH="/venv/bin:$PATH"
 
-ENV PATH="/home/myuser/.local/bin:${PATH}"
+# copy requirements file and install dependencies
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
 
 #copy the rest of the project files
-COPY --chown=myuser:myuser . .
+COPY . .
 
 # Expose the server port
 EXPOSE 8000
