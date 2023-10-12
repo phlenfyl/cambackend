@@ -3,7 +3,9 @@ FROM python:3-slim
 
 
 # working directory
-WORKDIR /app
+RUN adduser -D myuser
+USER myuser
+WORKDIR /home/myuser
 
 # set environment variables  
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -13,11 +15,14 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install --upgrade pip 
 
 # copy requirements file and install dependencies
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
+COPY --chown=myuser:myuser requirements.txt requirements.txt
+RUN pip install --no-cache-dir --user -r requirements.txt
+
+ENV PATH="/home/myuser/.local/bin:${PATH}"
+
 
 #copy the rest of the project files
-COPY . .
+COPY --chown=myuser:myuser . .
 
 # Expose the server port
 EXPOSE 8000
