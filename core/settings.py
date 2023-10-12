@@ -172,12 +172,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_uploads')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# CORS_ALLOWED_ORIGINS = (
-#     'https://camfront.vercel.app',
-#     'https://mfmadmin-izldar4i.b4a.run',
-#     'http://localhost:3000',
-#     'http://localhost:8000',
-# )
+CORS_ALLOWED_ORIGINS = (
+    'https://camfront.vercel.app',
+    'https://backendcam-64bo4zjn.b4a.run',
+    'http://localhost:3000',
+    'http://localhost:8000',
+)
 
 CORS_ALLOW_METHODS = (
     "GET",
